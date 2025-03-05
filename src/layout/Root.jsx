@@ -1,7 +1,13 @@
+import { Outlet } from "react-router";
+
 const Root = () => {
   return (
-    <div>Root</div>
-  )
-}
+    <>
+      <div className="bg-zinc-600 p-5">
+        <Outlet />
+      </div>
+    </>
+  );
+};
 
-export default Root
+export default Root;

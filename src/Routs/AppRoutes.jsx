@@ -21,21 +21,20 @@ const AppRoutes = () => {
     {
       path: "auth",
       element: <Auth />,
-      children: [{
-          path:'login',
-          element:<Login/>
-      },{
-          path:'register',
-          element:<Login/>
-      }
-     ],
+      children: [
+        {
+          path: "login",
+          element: <Login />,
+        },
+        {
+          path: "register",
+          element: <Login />,
+        },
+      ],
     },
   ];
-  const router = createBrowserRouter(AppRoutes)
-  return (
-     <RouterProvider router={router}/>
-  )
-
+  const router = createBrowserRouter(AppRoutes);
+  return <RouterProvider router={router} />;
 };
 
 export default AppRoutes;
