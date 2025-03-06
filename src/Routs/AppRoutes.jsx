@@ -5,9 +5,11 @@ import React from "react";
 import Home from "../pages/Home";
 import Auth from "../layout/Auth";
 import Login from "../pages/Login";
+import Register from "../pages/Register";
+
 
 const AppRoutes = () => {
-  const AppRoutes = [
+  const Routes = [
     {
       path: "/",
       element: <Root />,
@@ -28,13 +30,13 @@ const AppRoutes = () => {
         },
         {
           path: "register",
-          element: <Login />,
+          element: <Register/>,
         },
       ],
     },
   ];
-  const router = createBrowserRouter(AppRoutes);
-  return <RouterProvider router={router} />;
+  const route = createBrowserRouter(Routes);
+  return <RouterProvider router={route} />;
 };
 
 export default AppRoutes;
